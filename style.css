@@ -1,0 +1,159 @@
+/* General Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(45deg, #1e3c72, #2a5298);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: #ffffff;
+  }
+  
+  .quiz-container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+    max-width: 500px;
+    width: 100%;
+    text-align: center;
+    color: #333;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .quiz-container:hover {
+    transform: scale(1.05);
+    
+  }
+  
+  /* Lifelines Styling */
+  .lifelines {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+  }
+  
+  button {
+    padding: 10px;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    outline: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  button:hover {
+    background-color: #2a5298;
+    color: #fff;
+    transform: translateY(-3px);
+  }
+  
+  /* Timer Section Styling */
+  .timer-section {
+    font-size: 18px;
+    font-weight: bold;
+    color: #ed0f25;
+  }
+  
+  #timer {
+    font-weight: bold;
+  }
+  
+  /* Question Section Styling */
+  .question-section {
+    background: #2a5298;
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    font-size: 18px;
+  }
+  
+  /* Option Button Styling */
+  .option-btn {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 15px;
+    background-color: #ff6f61;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .option-btn:hover {
+    background-color: #ff3b3f;
+    box-shadow: 0px 8px 20px rgba(255, 107, 107, 0.3);
+  }
+  
+  .option-btn:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  /* Next Button Styling */
+  #next-btn {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 15px;
+    width: 100%;
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: bold;
+    display: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  #next-btn:hover {
+    background-color: #218838;
+  }
+  
+  /* Progress Bar Styling */
+  .progress-bar {
+    background-color: #e0e0e0;
+    border-radius: 50px;
+    margin-bottom: 20px;
+    height: 15px;
+    width: 100%;
+  }
+  
+  #progress {
+    height: 15px;
+    background-color: #008cba;
+    width: 0%;
+    border-radius: 50px;
+    transition: width 0.5s ease;
+  }
+  
+  /* Score Display Styling */
+  #score {
+    font-size: 24px;
+    font-weight: bold;
+    color: #2a5298;
+    margin-top: 20px;
+  }
+  
+  /* Animation */
+  @keyframes buttonClick {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  button:active {
+    animation: buttonClick 0.2s ease;
+  }
+  
