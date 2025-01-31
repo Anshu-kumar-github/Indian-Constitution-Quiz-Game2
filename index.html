@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Indian Constitution Quiz</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="quiz-container">
+    <h1>Indian Constitution Quiz Game</h1>
+    <div class="lifelines">
+      <button id="fiftyFifty" onclick="useFiftyFifty()">50/50</button>
+      <button id="skipQuestion" onclick="skipQuestion()">Skip</button>
+    </div>
+    <div class="progress-bar">
+      <div id="progress"></div>
+    </div>
+    <div id="quiz">
+      <div class="timer-section">
+        <p>Time Left: <span id="timer">15</span> seconds</p>
+      </div>
+      <div class="question-section">
+        <p id="question"></p>
+      </div>
+      <div class="options-section">
+        <button class="option-btn" id="option1" onclick="selectOption(0)"></button>
+        <button class="option-btn" id="option2" onclick="selectOption(1)"></button>
+        <button class="option-btn" id="option3" onclick="selectOption(2)"></button>
+        <button class="option-btn" id="option4" onclick="selectOption(3)"></button>
+      </div>
+      <button id="next-btn" onclick="nextQuestion()">Next</button>
+      <p id="score"></p>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
